@@ -1,7 +1,6 @@
 source "http://rubygems.org"
 
-gem "activesupport", ">= 3.0"
-gem "flipper", "~> 0.2.0"
+gemspec
 
 group :development do
   gem "bundler", "~> 1.2.0"

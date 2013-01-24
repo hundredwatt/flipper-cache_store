@@ -1,3 +1,10 @@
+PATH
+  remote: .
+  specs:
+    flipper-cache_store (0.0.1)
+      activesupport (>= 3.0)
+      flipper (~> 0.2.0)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -27,8 +34,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  activesupport (>= 3.0)
   bundler (~> 1.2.0)
-  flipper (~> 0.2.0)
+  flipper-cache_store!
   jeweler (~> 1.6.4)
   rspec (~> 2.0)
