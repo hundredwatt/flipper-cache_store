@@ -8,4 +8,5 @@ source "http://rubygems.org"
 group :development do
   gem "bundler", "~> 1.2.0"
   gem "jeweler", "~> 1.6.4"
+  gem "rspec", "~>2.0"
 end
