@@ -14,11 +14,11 @@ require 'rake'
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
-  gem.name = "flipper-rails"
-  gem.homepage = "http://github.com/hundredwatt/flipper-rails"
+  gem.name = "flipper-cache_store"
+  gem.homepage = "http://github.com/hundredwatt/flipper-cache_store"
   gem.license = "MIT"
-  gem.summary = %Q{Integrate Flipper into Rails}
-  gem.description = %Q{Integrate Flipper into Rails (https://github.com/jnunemaker/flipper)}
+  gem.summary = %Q{Use ActiveSupport::Cache::Store as the backend for Flipper}
+  gem.description = %Q{Use ActiveSupport::Cache::Store as the backend for Flipper (https://github.com/jnunemaker/flipper)}
   gem.email = "hundredwatt@gmail.com"
   gem.authors = ["Jason Nochlin"]
   # dependencies defined in Gemfile
