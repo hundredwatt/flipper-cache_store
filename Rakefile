@@ -11,19 +11,7 @@ rescue Bundler::BundlerError => e
 end
 require 'rake'
 
-require 'jeweler'
-Jeweler::Tasks.new do |gem|
-  # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
-  gem.name = "flipper-cache_store"
-  gem.homepage = "http://github.com/hundredwatt/flipper-cache_store"
-  gem.license = "MIT"
-  gem.summary = %Q{Use ActiveSupport::Cache::Store as the backend for Flipper}
-  gem.description = %Q{Use ActiveSupport::Cache::Store as the backend for Flipper (https://github.com/jnunemaker/flipper)}
-  gem.email = "hundredwatt@gmail.com"
-  gem.authors = ["Jason Nochlin"]
-  # dependencies defined in Gemfile
-end
-Jeweler::RubygemsDotOrgTasks.new
+require "bundler/gem_tasks"
 
 require 'rspec/core/rake_task'
 RSpec::Core::RakeTask.new(:spec) do |t|
@@ -31,13 +19,3 @@ RSpec::Core::RakeTask.new(:spec) do |t|
 end
 
 task :default => :spec
-
-require 'rdoc/task'
-RDoc::Task.new do |rdoc|
-  version = File.exist?('VERSION') ? File.read('VERSION') : ""
-
-  rdoc.rdoc_dir = 'rdoc'
-  rdoc.title = "flipper-rails #{version}"
-  rdoc.rdoc_files.include('README*')
-  rdoc.rdoc_files.include('lib/**/*.rb')
-end
