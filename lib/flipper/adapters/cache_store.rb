@@ -6,7 +6,7 @@ module Flipper
       end
 
       def read(key)
-        @cache_store.read key.to_s
+        @cache_store.read(key.to_s).dup
       end
 
       def write(key, value)
@@ -33,7 +33,7 @@ module Flipper
 
       def set_members(key)
         ensure_set_initialized(key)
-        @cache_store.read key.to_s
+        read(key)
       end
 
       private
