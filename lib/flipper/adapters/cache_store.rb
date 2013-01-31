@@ -6,7 +6,7 @@ module Flipper
       end
 
       def read(key)
-        @cache_store.read(key.to_s).dup
+        @cache_store.read(key.to_s).try(:dup)
       end
 
       def write(key, value)
